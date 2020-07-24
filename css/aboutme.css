@@ -1,0 +1,254 @@
+body{
+
+    height: 1800px; 
+    background-image: radial-gradient(circle, #5e32c4, #6d42cb, #7c52d2, #8a62d8, #9771df, #916dd8, #8b68d0, #8564c9, #6a4bb3, #4f339e, #321c89, #030374);
+
+}
+
+h1{
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+h2{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+   
+}
+
+h3{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+h5{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.btn {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+    
+  
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+}
+    
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+    
+   
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(19, 17, 17);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+    
+    
+.dropdown-content a {
+    color: snow;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+    
+  
+.dropdown-content a:hover {
+    background-color: rgb(122, 90, 207);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
+  
+.dropdown:hover .dropbtn {
+    background-color: #472850;
+}
+
+
+
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+ 
+.column {
+    float: left;
+    width: 25%;
+    padding: 30px;
+     
+}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+ 
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+  
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+  
+.flip-card-back {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    font-family: 'Raleway', sans-serif;
+}
+
+div.transbox {
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.4;
+}
+  
+div.transbox p {
+    margin: 0%;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+  
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+  
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+  
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+  
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  
+q {font-style: italic;}
+  
+ 
+.author {color: cornflowerblue;}
